@@ -1,0 +1,71 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /es/xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 207394d8f02e4987943e0988313f036a --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot MLP_tb_behav xil_defaultlib.MLP_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W1 [\BRAM_W1(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W1 [\BRAM_W1(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W1 [\BRAM_W1(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W1 [\BRAM_W1(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W1 [\BRAM_W1(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W1 [\BRAM_W1(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W1 [\BRAM_W1(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W1 [\BRAM_W1(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W1 [\BRAM_W1(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W1 [\BRAM_W1(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W1 [\BRAM_W1(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W1 [\BRAM_W1(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W1 [\BRAM_W1(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W1 [\BRAM_W1(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W1 [\BRAM_W1(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W1 [\BRAM_W1(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W1 [\BRAM_W1(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.Addr_Count_W1S [addr_count_w1s_default]
+Compiling architecture behavioral of entity xil_defaultlib.Neuron_1 [neuron_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sigma_L1 [sigma_l1_default]
+Compiling architecture behavioral of entity xil_defaultlib.CNT_L1_W [cnt_l1_w_default]
+Compiling architecture behavioral of entity xil_defaultlib.CNT_W2 [cnt_w2_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_L1 [mux_l1_default]
+Compiling architecture behavioral of entity xil_defaultlib.NOT_4bit_delay [not_4bit_delay_default]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_L1 [bram_l1_default]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.Sigma_L2 [sigma_l2_default]
+Compiling architecture behavioral of entity xil_defaultlib.delayer_16bit [delayer_16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_L2 [bram_l2_default]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.BRAM_W2 [\BRAM_W2(init_file="/home/studen...]
+Compiling architecture behavioral of entity xil_defaultlib.Sigma_L3 [sigma_l3_default]
+Compiling architecture behavioral of entity xil_defaultlib.MLP [mlp_default]
+Compiling architecture behavioral of entity xil_defaultlib.mlp_tb
+Built simulation snapshot MLP_tb_behav

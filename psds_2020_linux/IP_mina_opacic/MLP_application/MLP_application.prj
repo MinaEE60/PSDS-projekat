@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="MLP_application" location="/home/student/Desktop/PSDS_FINALNA/IP_mina_opacic/MLP_application" platform="/home/student/Desktop/PSDS_FINALNA/IP_mina_opacic/MLP_platform/export/MLP_platform/MLP_platform.xpfm" platformUID="xilinx:zybo-z7-10::0.0(custom)" systemProject="MLP_application_system" sysConfig="MLP_platform" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="b1a7945eb95b26c96956fa5433d3b68d">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1773106556">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1962333652" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

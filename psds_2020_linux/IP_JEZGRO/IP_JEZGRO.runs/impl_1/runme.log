@@ -1,0 +1,62 @@
+
+*** Running vivado
+    with args -log design_MLP_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_MLP_wrapper.tcl -notrace
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_MLP_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1306.887 ; gain = 2.016 ; free physical = 1806 ; free virtual = 18538
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mina/Downloads/ip_repo/IP_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+Command: link_design -top design_MLP_wrapper -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint '/home/mina/Downloads/IP_JEZGRO/IP_JEZGRO.gen/sources_1/bd/design_MLP/ip/design_MLP_IP_0_1/design_MLP_IP_0_1.dcp' for cell 'design_MLP_i/IP_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mina/Downloads/IP_JEZGRO/IP_JEZGRO.gen/sources_1/bd/design_MLP/ip/design_MLP_processing_system7_0_0/design_MLP_processing_system7_0_0.dcp' for cell 'design_MLP_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mina/Downloads/IP_JEZGRO/IP_JEZGRO.gen/sources_1/bd/design_MLP/ip/design_MLP_rst_ps7_0_50M_0/design_MLP_rst_ps7_0_50M_0.dcp' for cell 'design_MLP_i/rst_ps7_0_50M'
+INFO: [Project 1-454] Reading design checkpoint '/home/mina/Downloads/IP_JEZGRO/IP_JEZGRO.gen/sources_1/bd/design_MLP/ip/design_MLP_auto_pc_0/design_MLP_auto_pc_0.dcp' for cell 'design_MLP_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1647.941 ; gain = 0.000 ; free physical = 1465 ; free virtual = 18197
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mina/Downloads/IP_JEZGRO/IP_JEZGRO.gen/sources_1/bd/design_MLP/ip/design_MLP_processing_system7_0_0/design_MLP_processing_system7_0_0.xdc] for cell 'design_MLP_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/mina/Downloads/IP_JEZGRO/IP_JEZGRO.gen/sources_1/bd/design_MLP/ip/design_MLP_processing_system7_0_0/design_MLP_processing_system7_0_0.xdc] for cell 'design_MLP_i/processing_system7_0/inst'
+Parsing XDC File [/home/mina/Downloads/IP_JEZGRO/IP_JEZGRO.gen/sources_1/bd/design_MLP/ip/design_MLP_rst_ps7_0_50M_0/design_MLP_rst_ps7_0_50M_0_board.xdc] for cell 'design_MLP_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [/home/mina/Downloads/IP_JEZGRO/IP_JEZGRO.gen/sources_1/bd/design_MLP/ip/design_MLP_rst_ps7_0_50M_0/design_MLP_rst_ps7_0_50M_0_board.xdc] for cell 'design_MLP_i/rst_ps7_0_50M/U0'
+Parsing XDC File [/home/mina/Downloads/IP_JEZGRO/IP_JEZGRO.gen/sources_1/bd/design_MLP/ip/design_MLP_rst_ps7_0_50M_0/design_MLP_rst_ps7_0_50M_0.xdc] for cell 'design_MLP_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [/home/mina/Downloads/IP_JEZGRO/IP_JEZGRO.gen/sources_1/bd/design_MLP/ip/design_MLP_rst_ps7_0_50M_0/design_MLP_rst_ps7_0_50M_0.xdc] for cell 'design_MLP_i/rst_ps7_0_50M/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'design_MLP_IP_0_1_MLP' instantiated as 'design_MLP_i/IP_0/U0/MLP_ins' [/home/mina/Downloads/IP_JEZGRO/IP_JEZGRO.gen/sources_1/bd/design_MLP/ipshared/8d06/hdl/IP_v1_0.vhd:172]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.438 ; gain = 0.000 ; free physical = 1397 ; free virtual = 18128
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+14 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1796.438 ; gain = 476.676 ; free physical = 1397 ; free virtual = 18128
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+ERROR: [DRC INBB-3] Black Box Instances: Cell 'design_MLP_i/IP_0/U0/MLP_ins' of type 'design_MLP_IP_0_1_MLP' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.
+INFO: [Project 1-461] DRC finished with 1 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1839.188 ; gain = 42.750 ; free physical = 1389 ; free virtual = 18120
+INFO: [Common 17-83] Releasing license: Implementation
+19 Infos, 0 Warnings, 1 Critical Warnings and 2 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 28 16:27:56 2023...

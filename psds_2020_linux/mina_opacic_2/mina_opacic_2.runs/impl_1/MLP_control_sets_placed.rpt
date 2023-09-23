@@ -1,0 +1,128 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Wed Sep  6 11:32:01 2023
+| Host         : LabUbuLenovo running 64-bit Ubuntu 20.04.1 LTS
+| Command      : report_control_sets -verbose -file MLP_control_sets_placed.rpt
+| Design       : MLP
+| Device       : xc7z010
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    50 |
+|    Minimum number of control sets                        |    50 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    68 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    50 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |    44 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1563 |          459 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             294 |          100 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              35 |           15 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+----------------------------------+---------------------------------+------------------+----------------+--------------+
+| Clock Signal |           Enable Signal          |         Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------+----------------------------------+---------------------------------+------------------+----------------+--------------+
+|  clk         | CNT_L1/count_reg[4]_i_2__0_n_0   | CNT_L1/count_reg                |                2 |              5 |         2.50 |
+|  clk         | CNT_W3/count_reg[4]_i_2__2_n_0   | CNT_W3/count_reg                |                2 |              5 |         2.50 |
+|  clk         | CNT_L2/count_reg[4]_i_2_n_0      | CNT_L2/count_reg                |                1 |              5 |         5.00 |
+|  clk         | Counter_W1S/p_0_in__0            |                                 |                2 |              6 |         3.00 |
+|  clk         | Counter_W1S/p_0_in__1            |                                 |                2 |              6 |         3.00 |
+|  clk         |                                  | SIGMA_L2/temp1a[15]_i_1__0_n_0  |                2 |              7 |         3.50 |
+|  clk         |                                  | SIGMA_L2/temp2a[15]_i_1__0_n_0  |                1 |              7 |         7.00 |
+|  clk         |                                  | SIGMA_L2/temp3a[15]_i_1__0_n_0  |                3 |              7 |         2.33 |
+|  clk         |                                  | SIGMA_L2/temp4a[15]_i_1__0_n_0  |                3 |              7 |         2.33 |
+|  clk         |                                  | SIGMA_L2/temp5a[15]_i_1__0_n_0  |                3 |              7 |         2.33 |
+|  clk         |                                  | SIGMA_L2/temp6a[15]_i_1__0_n_0  |                3 |              7 |         2.33 |
+|  clk         |                                  | SIGMA_L2/temp7a[15]_i_1__0_n_0  |                2 |              7 |         3.50 |
+|  clk         |                                  | SIGMA_L2/temp8a[15]_i_1__0_n_0  |                1 |              7 |         7.00 |
+|  clk         |                                  | SIGMA_L2/temp9a[15]_i_1__0_n_0  |                3 |              7 |         2.33 |
+|  clk         |                                  | SIGMA_L3/temp10[2]_i_1_n_0      |                2 |              7 |         3.50 |
+|  clk         |                                  | SIGMA_L3/temp1[2]_i_1_n_0       |                2 |              7 |         3.50 |
+|  clk         |                                  | SIGMA_L3/temp2[2]_i_1_n_0       |                2 |              7 |         3.50 |
+|  clk         |                                  | SIGMA_L3/temp3[2]_i_1_n_0       |                3 |              7 |         2.33 |
+|  clk         |                                  | SIGMA_L3/temp4[2]_i_1_n_0       |                2 |              7 |         3.50 |
+|  clk         |                                  | SIGMA_L3/temp5[2]_i_1_n_0       |                3 |              7 |         2.33 |
+|  clk         |                                  | SIGMA_L3/temp6[2]_i_1_n_0       |                3 |              7 |         2.33 |
+|  clk         |                                  | SIGMA_L3/temp7[2]_i_1_n_0       |                3 |              7 |         2.33 |
+|  clk         |                                  | SIGMA_L3/temp8[2]_i_1_n_0       |                3 |              7 |         2.33 |
+|  clk         |                                  | SIGMA_L3/temp9[2]_i_1_n_0       |                3 |              7 |         2.33 |
+|  clk         |                                  | SIGMA_L1/temp10a[15]_i_1_n_0    |                2 |              7 |         3.50 |
+|  clk         |                                  | SIGMA_L1/temp8a[15]_i_1_n_0     |                2 |              7 |         3.50 |
+|  clk         |                                  | SIGMA_L1/temp14a[15]_i_1_n_0    |                4 |              7 |         1.75 |
+|  clk         |                                  | SIGMA_L1/temp2a[15]_i_1_n_0     |                2 |              7 |         3.50 |
+|  clk         |                                  | SIGMA_L1/temp3a[15]_i_1_n_0     |                1 |              7 |         7.00 |
+|  clk         |                                  | SIGMA_L1/temp4a[15]_i_1_n_0     |                2 |              7 |         3.50 |
+|  clk         |                                  | SIGMA_L1/temp7a[15]_i_1_n_0     |                3 |              7 |         2.33 |
+|  clk         |                                  | SIGMA_L1/temp12a[15]_i_1_n_0    |                2 |              7 |         3.50 |
+|  clk         |                                  | SIGMA_L1/temp16a[15]_i_1_n_0    |                3 |              7 |         2.33 |
+|  clk         |                                  | SIGMA_L1/temp11a[15]_i_1_n_0    |                2 |              7 |         3.50 |
+|  clk         |                                  | SIGMA_L1/temp15a[15]_i_1_n_0    |                4 |              7 |         1.75 |
+|  clk         |                                  | SIGMA_L2/temp16a[15]_i_1__0_n_0 |                2 |              7 |         3.50 |
+|  clk         |                                  | SIGMA_L1/temp5a[15]_i_1_n_0     |                2 |              7 |         3.50 |
+|  clk         |                                  | SIGMA_L1/temp6a[15]_i_1_n_0     |                2 |              7 |         3.50 |
+|  clk         |                                  | SIGMA_L1/temp1a[15]_i_1_n_0     |                2 |              7 |         3.50 |
+|  clk         |                                  | SIGMA_L1/temp9a[15]_i_1_n_0     |                1 |              7 |         7.00 |
+|  clk         |                                  | SIGMA_L1/temp13a[15]_i_1_n_0    |                3 |              7 |         2.33 |
+|  clk         |                                  | SIGMA_L2/temp10a[15]_i_1__0_n_0 |                2 |              7 |         3.50 |
+|  clk         |                                  | SIGMA_L2/temp11a[15]_i_1__0_n_0 |                3 |              7 |         2.33 |
+|  clk         |                                  | SIGMA_L2/temp12a[15]_i_1__0_n_0 |                3 |              7 |         2.33 |
+|  clk         |                                  | SIGMA_L2/temp13a[15]_i_1__0_n_0 |                2 |              7 |         3.50 |
+|  clk         |                                  | SIGMA_L2/temp14a[15]_i_1__0_n_0 |                2 |              7 |         3.50 |
+|  clk         |                                  | SIGMA_L2/temp15a[15]_i_1__0_n_0 |                2 |              7 |         3.50 |
+|  clk         | CNT_W2/count_reg[4]_i_2__1_n_0   | CNT_W2/count_reg                |                4 |             10 |         2.50 |
+|  clk         | Counter_W1S/count_reg[9]_i_2_n_0 | Counter_W1S/count_reg           |                6 |             10 |         1.67 |
+|  clk         |                                  |                                 |              459 |           1563 |         3.41 |
++--------------+----------------------------------+---------------------------------+------------------+----------------+--------------+
+
+

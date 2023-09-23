@@ -1,0 +1,36 @@
+Nothing to build in platform 'MLP_platform'
+
+13:53:15 **** Build of configuration Debug for project MLP_application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/student/Desktop/PSDS_FINALNA/IP_mina_opacic/MLP_platform/export/MLP_platform/sw/MLP_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/student/Desktop/PSDS_FINALNA/IP_mina_opacic/MLP_platform/export/MLP_platform/sw/MLP_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: MLP_application.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/student/Desktop/PSDS_FINALNA/IP_mina_opacic/MLP_platform/export/MLP_platform/sw/MLP_platform/standalone_domain/bsplib/lib -o "MLP_application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MLP_application.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size MLP_application.elf  |tee "MLP_application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19068	   1144	  22568	  42780	   a71c	MLP_application.elf
+Finished building: MLP_application.elf.size
+ 
+13:53:17 **** Build of configuration Debug for project MLP_application_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/student/Desktop/PSDS_FINALNA/IP_mina_opacic/MLP_platform/export/MLP_platform/MLP_platform.xpfm -domains standalone_domain -bifpath /home/student/Desktop/PSDS_FINALNA/IP_mina_opacic/MLP_application_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/student/Desktop/PSDS_FINALNA/IP_mina_opacic/MLP_platform/export/MLP_platform/MLP_platform.xpfm --sys_config MLP_platform --bif /home/student/Desktop/PSDS_FINALNA/IP_mina_opacic/MLP_application_system/Debug/system.bif --bitstream /home/student/Desktop/PSDS_FINALNA/IP_mina_opacic/MLP_application/_ide/bitstream/MLP_wrapper.bit --elf /home/student/Desktop/PSDS_FINALNA/IP_mina_opacic/MLP_application/Debug/MLP_application.elf,ps7_cortexa9_0
+creating BOOT.BIN using /home/student/Desktop/PSDS_FINALNA/IP_mina_opacic/MLP_application/_ide/bitstream/MLP_wrapper.bit
+Running /es/xilinx/Vitis/2020.2/bin/bootgen  -image /home/student/Desktop/PSDS_FINALNA/IP_mina_opacic/MLP_application_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

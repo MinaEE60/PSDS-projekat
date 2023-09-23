@@ -1,0 +1,20 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../psds_projekat/PSDS_gotov2/MLP.srcs/sources_1/new/Addr_Count_W1S.vhd" \
+"../../../../../psds_projekat/PSDS_gotov2/MLP.srcs/sources_1/new/BRAM_L1.vhd" \
+"../../../../../psds_projekat/PSDS_gotov2/MLP.srcs/sources_1/new/BRAM_L2.vhd" \
+"../../../../../psds_projekat/PSDS_gotov2/MLP.srcs/sources_1/imports/new/BRAM_W1.vhd" \
+"../../../../../psds_projekat/PSDS_gotov2/MLP.srcs/sources_1/new/BRAM_W2.vhd" \
+"../../../../../psds_projekat/PSDS_gotov2/MLP.srcs/sources_1/new/CNT_L1_W.vhd" \
+"../../../../../psds_projekat/PSDS_gotov2/MLP.srcs/sources_1/new/CNT_W2.vhd" \
+"../../../../../psds_projekat/PSDS_gotov2/MLP.srcs/sources_1/new/Neuron_1.vhd" \
+"../../../../../psds_projekat/PSDS_gotov2/MLP.srcs/sources_1/new/Sigma_L1.vhd" \
+"../../../../../psds_projekat/PSDS_gotov2/MLP.srcs/sources_1/new/MUX_L1.vhd" \
+"../../../../../psds_projekat/PSDS_gotov2/MLP.srcs/sources_1/new/NOT_4bit_delay.vhd" \
+"../../../../../psds_projekat/PSDS_gotov2/MLP.srcs/sources_1/new/Sigma_L2.vhd" \
+"../../../../../psds_projekat/PSDS_gotov2/MLP.srcs/sources_1/new/delayer_16bit.vhd" \
+"../../../../../psds_projekat/PSDS_gotov2/MLP.srcs/sources_1/new/Sigma_L3.vhd" \
+"../../../../../psds_projekat/PSDS_gotov2/MLP.srcs/sources_1/new/MLP.vhd" \
+
+# Do not sort compile order
+nosort

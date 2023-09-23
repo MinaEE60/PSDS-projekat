@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Sep  6 13:23:01 2023
+# Process ID: 40775
+# Current directory: /home/student/Desktop/PSDS_FINALNA/IP_mina_opacic/IP_mina_opacic.runs/synth_1
+# Command line: vivado -log MLP_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MLP_wrapper.tcl
+# Log file: /home/student/Desktop/PSDS_FINALNA/IP_mina_opacic/IP_mina_opacic.runs/synth_1/MLP_wrapper.vds
+# Journal file: /home/student/Desktop/PSDS_FINALNA/IP_mina_opacic/IP_mina_opacic.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source MLP_wrapper.tcl -notrace

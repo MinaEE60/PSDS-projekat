@@ -1,0 +1,845 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Aug 30 23:49:24 2023
+# Process ID: 9450
+# Current directory: /home/mina/Downloads/IP_NOV0/IP_NOV0.runs/MLP1_IP_0_1_synth_1
+# Command line: vivado -log MLP1_IP_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MLP1_IP_0_1.tcl
+# Log file: /home/mina/Downloads/IP_NOV0/IP_NOV0.runs/MLP1_IP_0_1_synth_1/MLP1_IP_0_1.vds
+# Journal file: /home/mina/Downloads/IP_NOV0/IP_NOV0.runs/MLP1_IP_0_1_synth_1/vivado.jou
+# Running On: mina-o, OS: Linux, CPU Frequency: 3570.551 MHz, CPU Physical cores: 2, Host memory: 8215 MB
+#-----------------------------------------------------------
+source MLP1_IP_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1306.277 ; gain = 2.016 ; free physical = 140 ; free virtual = 19350
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mina/Downloads/ip_repo/IP_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: MLP1_IP_0_1
+Command: synth_design -top MLP1_IP_0_1 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9534
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1994.289 ; gain = 372.766 ; free physical = 123 ; free virtual = 16063
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1126.708; parent = 1012.990; children = 139.763
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3048.914; parent = 1997.262; children = 1051.652
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MLP1_IP_0_1' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ip/MLP1_IP_0_1/synth/MLP1_IP_0_1.vhd:82]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'IP_v1_0' declared at '/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/hdl/IP_v1_0.vhd:5' bound to instance 'U0' of component 'IP_v1_0' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ip/MLP1_IP_0_1/synth/MLP1_IP_0_1.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'IP_v1_0' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/hdl/IP_v1_0.vhd:48]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'IP_v1_0_S00_AXI' declared at '/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/hdl/IP_v1_0_S00_AXI.vhd:6' bound to instance 'IP_v1_0_S00_AXI_inst' of component 'IP_v1_0_S00_AXI' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/hdl/IP_v1_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'IP_v1_0_S00_AXI' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/hdl/IP_v1_0_S00_AXI.vhd:99]
+INFO: [Synth 8-256] done synthesizing module 'IP_v1_0_S00_AXI' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/hdl/IP_v1_0_S00_AXI.vhd:99]
+INFO: [Synth 8-3491] module 'MLP' declared at '/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/MLP.vhd:26' bound to instance 'MLP_ins' of component 'MLP' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/hdl/IP_v1_0.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'MLP' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/MLP.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W1' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W1' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W1__parameterized0' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W1__parameterized0' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W1__parameterized1' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W1__parameterized1' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W1__parameterized2' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W1__parameterized2' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W1__parameterized3' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W1__parameterized3' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W1__parameterized4' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W1__parameterized4' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W1__parameterized5' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W1__parameterized5' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W1__parameterized6' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W1__parameterized6' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W1__parameterized7' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W1__parameterized7' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W1__parameterized8' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W1__parameterized8' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W1__parameterized9' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W1__parameterized9' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W1__parameterized10' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W1__parameterized10' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W1__parameterized11' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W1__parameterized11' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W1__parameterized12' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W1__parameterized12' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W1__parameterized13' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W1__parameterized13' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W1__parameterized14' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W1__parameterized14' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W1__parameterized15' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W1__parameterized15' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W1.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'Addr_Count_W1S' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/Addr_Count_W1S.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'Addr_Count_W1S' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/Addr_Count_W1S.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'Neuron_1' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/Neuron_1.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'Neuron_1' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/Neuron_1.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'Sigma_L1' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/Sigma_L1.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Sigma_L1' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/Sigma_L1.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'CNT_L1_W' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/CNT_L1_W.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'CNT_L1_W' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/CNT_L1_W.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'CNT_W2' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/CNT_W2.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'CNT_W2' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/CNT_W2.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'MUX_L1' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/MUX_L1.vhd:49]
+INFO: [Synth 8-226] default block is never used [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/MUX_L1.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'MUX_L1' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/MUX_L1.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'NOT_4bit_delay' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/NOT_4bit_delay.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'NOT_4bit_delay' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/NOT_4bit_delay.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'BRAM_L1' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_L1.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_L1' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_L1.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized0' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized0' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized1' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized1' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized2' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized2' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized3' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized3' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized4' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized4' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized5' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized5' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized6' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized6' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized7' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized7' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized8' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized8' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized9' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized9' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized10' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized10' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized11' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized11' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized12' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized12' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized13' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized13' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized14' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized14' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'Sigma_L2' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/Sigma_L2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Sigma_L2' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/Sigma_L2.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'delayer_16bit' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/delayer_16bit.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'delayer_16bit' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/delayer_16bit.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'BRAM_L2' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_L2.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_L2' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_L2.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized15' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized15' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized16' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized16' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized17' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized17' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized18' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized18' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized19' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized19' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized20' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized20' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized21' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized21' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized22' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized22' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized23' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized23' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'BRAM_W2__parameterized24' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_W2__parameterized24' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/BRAM_W2.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'Sigma_L3' [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/Sigma_L3.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'Sigma_L3' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/Sigma_L3.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'MLP' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/src/MLP.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'IP_v1_0' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ipshared/df97/hdl/IP_v1_0.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'MLP1_IP_0_1' (0#1) [/home/mina/Downloads/IP_NOV0/IP_NOV0.gen/sources_1/bd/MLP1/ip/MLP1_IP_0_1/synth/MLP1_IP_0_1.vhd:82]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module IP_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module IP_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module IP_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module IP_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module IP_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module IP_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:35 . Memory (MB): peak = 2124.227 ; gain = 502.703 ; free physical = 264 ; free virtual = 15995
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1263.165; parent = 1149.701; children = 139.763
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3175.883; parent = 2124.230; children = 1051.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:35 . Memory (MB): peak = 2136.102 ; gain = 514.578 ; free physical = 320 ; free virtual = 16060
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1263.165; parent = 1149.701; children = 139.763
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3187.758; parent = 2136.105; children = 1051.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:35 . Memory (MB): peak = 2136.102 ; gain = 514.578 ; free physical = 320 ; free virtual = 16061
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1263.165; parent = 1149.701; children = 139.763
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3187.758; parent = 2136.105; children = 1051.652
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2136.102 ; gain = 0.000 ; free physical = 298 ; free virtual = 16061
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2261.836 ; gain = 0.000 ; free physical = 156 ; free virtual = 15845
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2261.836 ; gain = 0.000 ; free physical = 153 ; free virtual = 15842
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 2261.836 ; gain = 640.312 ; free physical = 454 ; free virtual = 16260
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1263.165; parent = 1149.701; children = 139.763
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3313.492; parent = 2261.840; children = 1051.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 2261.836 ; gain = 640.312 ; free physical = 452 ; free virtual = 16258
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1263.165; parent = 1149.701; children = 139.763
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3313.492; parent = 2261.840; children = 1051.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 2261.836 ; gain = 640.312 ; free physical = 450 ; free virtual = 16256
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1263.165; parent = 1149.701; children = 139.763
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3313.492; parent = 2261.840; children = 1051.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:57 . Memory (MB): peak = 2261.836 ; gain = 640.312 ; free physical = 362 ; free virtual = 16183
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1263.165; parent = 1149.701; children = 139.763
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3313.492; parent = 2261.840; children = 1051.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   34 Bit       Adders := 42    
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 4     
++---Registers : 
+	               34 Bit    Registers := 126   
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 55    
+	               14 Bit    Registers := 17    
+	               13 Bit    Registers := 23    
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 18    
++---RAMs : 
+	              256 Bit	(16 X 16 bit)          RAMs := 2     
++---ROMs : 
+	                    ROMs := 17    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 6     
+	   3 Input   16 Bit        Muxes := 42    
+	   2 Input    1 Bit        Muxes := 51    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP U0/MLP_ins/N1_1/y_temp10, operation Mode is: A*B.
+DSP Report: operator U0/MLP_ins/N1_1/y_temp10 is absorbed into DSP U0/MLP_ins/N1_1/y_temp10.
+DSP Report: Generating DSP U0/MLP_ins/N1_2/y_temp10, operation Mode is: A*B.
+DSP Report: operator U0/MLP_ins/N1_2/y_temp10 is absorbed into DSP U0/MLP_ins/N1_2/y_temp10.
+DSP Report: Generating DSP U0/MLP_ins/N1_3/y_temp10, operation Mode is: A*B.
+DSP Report: operator U0/MLP_ins/N1_3/y_temp10 is absorbed into DSP U0/MLP_ins/N1_3/y_temp10.
+DSP Report: Generating DSP U0/MLP_ins/N1_4/y_temp10, operation Mode is: A*B.
+DSP Report: operator U0/MLP_ins/N1_4/y_temp10 is absorbed into DSP U0/MLP_ins/N1_4/y_temp10.
+DSP Report: Generating DSP U0/MLP_ins/N1_5/y_temp10, operation Mode is: A*B.
+DSP Report: operator U0/MLP_ins/N1_5/y_temp10 is absorbed into DSP U0/MLP_ins/N1_5/y_temp10.
+DSP Report: Generating DSP U0/MLP_ins/N1_6/y_temp10, operation Mode is: A*B.
+DSP Report: operator U0/MLP_ins/N1_6/y_temp10 is absorbed into DSP U0/MLP_ins/N1_6/y_temp10.
+DSP Report: Generating DSP U0/MLP_ins/N1_7/y_temp10, operation Mode is: A*B.
+DSP Report: operator U0/MLP_ins/N1_7/y_temp10 is absorbed into DSP U0/MLP_ins/N1_7/y_temp10.
+DSP Report: Generating DSP U0/MLP_ins/N1_8/y_temp10, operation Mode is: A*B.
+DSP Report: operator U0/MLP_ins/N1_8/y_temp10 is absorbed into DSP U0/MLP_ins/N1_8/y_temp10.
+DSP Report: Generating DSP U0/MLP_ins/N1_9/y_temp10, operation Mode is: A*B.
+DSP Report: operator U0/MLP_ins/N1_9/y_temp10 is absorbed into DSP U0/MLP_ins/N1_9/y_temp10.
+DSP Report: Generating DSP U0/MLP_ins/N1_10/y_temp10, operation Mode is: A*B.
+DSP Report: operator U0/MLP_ins/N1_10/y_temp10 is absorbed into DSP U0/MLP_ins/N1_10/y_temp10.
+DSP Report: Generating DSP U0/MLP_ins/N1_11/y_temp10, operation Mode is: A*B.
+DSP Report: operator U0/MLP_ins/N1_11/y_temp10 is absorbed into DSP U0/MLP_ins/N1_11/y_temp10.
+DSP Report: Generating DSP U0/MLP_ins/N1_12/y_temp10, operation Mode is: A*B.
+DSP Report: operator U0/MLP_ins/N1_12/y_temp10 is absorbed into DSP U0/MLP_ins/N1_12/y_temp10.
+DSP Report: Generating DSP U0/MLP_ins/N1_13/y_temp10, operation Mode is: A*B.
+DSP Report: operator U0/MLP_ins/N1_13/y_temp10 is absorbed into DSP U0/MLP_ins/N1_13/y_temp10.
+DSP Report: Generating DSP U0/MLP_ins/N1_14/y_temp10, operation Mode is: A*B.
+DSP Report: operator U0/MLP_ins/N1_14/y_temp10 is absorbed into DSP U0/MLP_ins/N1_14/y_temp10.
+DSP Report: Generating DSP U0/MLP_ins/N1_15/y_temp10, operation Mode is: A*B.
+DSP Report: operator U0/MLP_ins/N1_15/y_temp10 is absorbed into DSP U0/MLP_ins/N1_15/y_temp10.
+DSP Report: Generating DSP U0/MLP_ins/N1_16/y_temp10, operation Mode is: A*B.
+DSP Report: operator U0/MLP_ins/N1_16/y_temp10 is absorbed into DSP U0/MLP_ins/N1_16/y_temp10.
+DSP Report: Generating DSP U0/MLP_ins/N2_1/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW2_1/doa_reg is absorbed into DSP U0/MLP_ins/N2_1/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_1/y_temp_reg is absorbed into DSP U0/MLP_ins/N2_1/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_1/y_temp1_reg is absorbed into DSP U0/MLP_ins/N2_1/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_1/y_temp0 is absorbed into DSP U0/MLP_ins/N2_1/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_1/y_temp10 is absorbed into DSP U0/MLP_ins/N2_1/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N2_2/y_temp_reg, operation Mode is: (P+(A2*B)')'.
+DSP Report: register U0/MLP_ins/N2_2/y_temp_reg is absorbed into DSP U0/MLP_ins/N2_2/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_2/y_temp_reg is absorbed into DSP U0/MLP_ins/N2_2/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_2/y_temp1_reg is absorbed into DSP U0/MLP_ins/N2_2/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_2/y_temp0 is absorbed into DSP U0/MLP_ins/N2_2/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_2/y_temp10 is absorbed into DSP U0/MLP_ins/N2_2/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N2_3/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW2_3/doa_reg is absorbed into DSP U0/MLP_ins/N2_3/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_3/y_temp_reg is absorbed into DSP U0/MLP_ins/N2_3/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_3/y_temp1_reg is absorbed into DSP U0/MLP_ins/N2_3/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_3/y_temp0 is absorbed into DSP U0/MLP_ins/N2_3/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_3/y_temp10 is absorbed into DSP U0/MLP_ins/N2_3/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N2_4/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW2_4/doa_reg is absorbed into DSP U0/MLP_ins/N2_4/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_4/y_temp_reg is absorbed into DSP U0/MLP_ins/N2_4/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_4/y_temp1_reg is absorbed into DSP U0/MLP_ins/N2_4/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_4/y_temp0 is absorbed into DSP U0/MLP_ins/N2_4/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_4/y_temp10 is absorbed into DSP U0/MLP_ins/N2_4/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N2_5/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW2_5/doa_reg is absorbed into DSP U0/MLP_ins/N2_5/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_5/y_temp_reg is absorbed into DSP U0/MLP_ins/N2_5/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_5/y_temp1_reg is absorbed into DSP U0/MLP_ins/N2_5/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_5/y_temp0 is absorbed into DSP U0/MLP_ins/N2_5/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_5/y_temp10 is absorbed into DSP U0/MLP_ins/N2_5/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N2_6/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW2_6/doa_reg is absorbed into DSP U0/MLP_ins/N2_6/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_6/y_temp_reg is absorbed into DSP U0/MLP_ins/N2_6/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_6/y_temp1_reg is absorbed into DSP U0/MLP_ins/N2_6/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_6/y_temp0 is absorbed into DSP U0/MLP_ins/N2_6/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_6/y_temp10 is absorbed into DSP U0/MLP_ins/N2_6/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N2_7/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW2_7/doa_reg is absorbed into DSP U0/MLP_ins/N2_7/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_7/y_temp_reg is absorbed into DSP U0/MLP_ins/N2_7/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_7/y_temp1_reg is absorbed into DSP U0/MLP_ins/N2_7/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_7/y_temp0 is absorbed into DSP U0/MLP_ins/N2_7/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_7/y_temp10 is absorbed into DSP U0/MLP_ins/N2_7/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N2_8/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW2_8/doa_reg is absorbed into DSP U0/MLP_ins/N2_8/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_8/y_temp_reg is absorbed into DSP U0/MLP_ins/N2_8/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_8/y_temp1_reg is absorbed into DSP U0/MLP_ins/N2_8/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_8/y_temp0 is absorbed into DSP U0/MLP_ins/N2_8/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_8/y_temp10 is absorbed into DSP U0/MLP_ins/N2_8/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N2_9/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW2_9/doa_reg is absorbed into DSP U0/MLP_ins/N2_9/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_9/y_temp_reg is absorbed into DSP U0/MLP_ins/N2_9/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_9/y_temp1_reg is absorbed into DSP U0/MLP_ins/N2_9/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_9/y_temp0 is absorbed into DSP U0/MLP_ins/N2_9/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_9/y_temp10 is absorbed into DSP U0/MLP_ins/N2_9/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N2_10/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW2_10/doa_reg is absorbed into DSP U0/MLP_ins/N2_10/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_10/y_temp_reg is absorbed into DSP U0/MLP_ins/N2_10/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_10/y_temp1_reg is absorbed into DSP U0/MLP_ins/N2_10/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_10/y_temp0 is absorbed into DSP U0/MLP_ins/N2_10/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_10/y_temp10 is absorbed into DSP U0/MLP_ins/N2_10/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N2_11/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW2_11/doa_reg is absorbed into DSP U0/MLP_ins/N2_11/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_11/y_temp_reg is absorbed into DSP U0/MLP_ins/N2_11/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_11/y_temp1_reg is absorbed into DSP U0/MLP_ins/N2_11/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_11/y_temp0 is absorbed into DSP U0/MLP_ins/N2_11/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_11/y_temp10 is absorbed into DSP U0/MLP_ins/N2_11/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N2_12/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW2_12/doa_reg is absorbed into DSP U0/MLP_ins/N2_12/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_12/y_temp_reg is absorbed into DSP U0/MLP_ins/N2_12/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_12/y_temp1_reg is absorbed into DSP U0/MLP_ins/N2_12/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_12/y_temp0 is absorbed into DSP U0/MLP_ins/N2_12/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_12/y_temp10 is absorbed into DSP U0/MLP_ins/N2_12/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N2_13/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW2_13/doa_reg is absorbed into DSP U0/MLP_ins/N2_13/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_13/y_temp_reg is absorbed into DSP U0/MLP_ins/N2_13/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_13/y_temp1_reg is absorbed into DSP U0/MLP_ins/N2_13/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_13/y_temp0 is absorbed into DSP U0/MLP_ins/N2_13/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_13/y_temp10 is absorbed into DSP U0/MLP_ins/N2_13/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N2_14/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW2_14/doa_reg is absorbed into DSP U0/MLP_ins/N2_14/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_14/y_temp_reg is absorbed into DSP U0/MLP_ins/N2_14/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_14/y_temp1_reg is absorbed into DSP U0/MLP_ins/N2_14/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_14/y_temp0 is absorbed into DSP U0/MLP_ins/N2_14/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_14/y_temp10 is absorbed into DSP U0/MLP_ins/N2_14/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N2_15/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW2_15/doa_reg is absorbed into DSP U0/MLP_ins/N2_15/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_15/y_temp_reg is absorbed into DSP U0/MLP_ins/N2_15/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_15/y_temp1_reg is absorbed into DSP U0/MLP_ins/N2_15/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_15/y_temp0 is absorbed into DSP U0/MLP_ins/N2_15/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_15/y_temp10 is absorbed into DSP U0/MLP_ins/N2_15/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N2_16/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW2_16/doa_reg is absorbed into DSP U0/MLP_ins/N2_16/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_16/y_temp_reg is absorbed into DSP U0/MLP_ins/N2_16/y_temp_reg.
+DSP Report: register U0/MLP_ins/N2_16/y_temp1_reg is absorbed into DSP U0/MLP_ins/N2_16/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_16/y_temp0 is absorbed into DSP U0/MLP_ins/N2_16/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N2_16/y_temp10 is absorbed into DSP U0/MLP_ins/N2_16/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N3_1/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW3_1/doa_reg is absorbed into DSP U0/MLP_ins/N3_1/y_temp_reg.
+DSP Report: register U0/MLP_ins/N3_1/y_temp_reg is absorbed into DSP U0/MLP_ins/N3_1/y_temp_reg.
+DSP Report: register U0/MLP_ins/N3_1/y_temp1_reg is absorbed into DSP U0/MLP_ins/N3_1/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N3_1/y_temp0 is absorbed into DSP U0/MLP_ins/N3_1/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N3_1/y_temp10 is absorbed into DSP U0/MLP_ins/N3_1/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N3_2/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW3_2/doa_reg is absorbed into DSP U0/MLP_ins/N3_2/y_temp_reg.
+DSP Report: register U0/MLP_ins/N3_2/y_temp_reg is absorbed into DSP U0/MLP_ins/N3_2/y_temp_reg.
+DSP Report: register U0/MLP_ins/N3_2/y_temp1_reg is absorbed into DSP U0/MLP_ins/N3_2/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N3_2/y_temp0 is absorbed into DSP U0/MLP_ins/N3_2/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N3_2/y_temp10 is absorbed into DSP U0/MLP_ins/N3_2/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N3_3/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW3_3/doa_reg is absorbed into DSP U0/MLP_ins/N3_3/y_temp_reg.
+DSP Report: register U0/MLP_ins/N3_3/y_temp_reg is absorbed into DSP U0/MLP_ins/N3_3/y_temp_reg.
+DSP Report: register U0/MLP_ins/N3_3/y_temp1_reg is absorbed into DSP U0/MLP_ins/N3_3/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N3_3/y_temp0 is absorbed into DSP U0/MLP_ins/N3_3/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N3_3/y_temp10 is absorbed into DSP U0/MLP_ins/N3_3/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N3_4/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW3_4/doa_reg is absorbed into DSP U0/MLP_ins/N3_4/y_temp_reg.
+DSP Report: register U0/MLP_ins/N3_4/y_temp_reg is absorbed into DSP U0/MLP_ins/N3_4/y_temp_reg.
+DSP Report: register U0/MLP_ins/N3_4/y_temp1_reg is absorbed into DSP U0/MLP_ins/N3_4/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N3_4/y_temp0 is absorbed into DSP U0/MLP_ins/N3_4/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N3_4/y_temp10 is absorbed into DSP U0/MLP_ins/N3_4/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N3_5/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW3_5/doa_reg is absorbed into DSP U0/MLP_ins/N3_5/y_temp_reg.
+DSP Report: register U0/MLP_ins/N3_5/y_temp_reg is absorbed into DSP U0/MLP_ins/N3_5/y_temp_reg.
+DSP Report: register U0/MLP_ins/N3_5/y_temp1_reg is absorbed into DSP U0/MLP_ins/N3_5/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N3_5/y_temp0 is absorbed into DSP U0/MLP_ins/N3_5/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N3_5/y_temp10 is absorbed into DSP U0/MLP_ins/N3_5/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N3_6/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW3_6/doa_reg is absorbed into DSP U0/MLP_ins/N3_6/y_temp_reg.
+DSP Report: register U0/MLP_ins/N3_6/y_temp_reg is absorbed into DSP U0/MLP_ins/N3_6/y_temp_reg.
+DSP Report: register U0/MLP_ins/N3_6/y_temp1_reg is absorbed into DSP U0/MLP_ins/N3_6/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N3_6/y_temp0 is absorbed into DSP U0/MLP_ins/N3_6/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N3_6/y_temp10 is absorbed into DSP U0/MLP_ins/N3_6/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N3_7/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW3_7/doa_reg is absorbed into DSP U0/MLP_ins/N3_7/y_temp_reg.
+DSP Report: register U0/MLP_ins/N3_7/y_temp_reg is absorbed into DSP U0/MLP_ins/N3_7/y_temp_reg.
+DSP Report: register U0/MLP_ins/N3_7/y_temp1_reg is absorbed into DSP U0/MLP_ins/N3_7/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N3_7/y_temp0 is absorbed into DSP U0/MLP_ins/N3_7/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N3_7/y_temp10 is absorbed into DSP U0/MLP_ins/N3_7/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N3_8/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW3_8/doa_reg is absorbed into DSP U0/MLP_ins/N3_8/y_temp_reg.
+DSP Report: register U0/MLP_ins/N3_8/y_temp_reg is absorbed into DSP U0/MLP_ins/N3_8/y_temp_reg.
+DSP Report: register U0/MLP_ins/N3_8/y_temp1_reg is absorbed into DSP U0/MLP_ins/N3_8/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N3_8/y_temp0 is absorbed into DSP U0/MLP_ins/N3_8/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N3_8/y_temp10 is absorbed into DSP U0/MLP_ins/N3_8/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N3_9/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW3_9/doa_reg is absorbed into DSP U0/MLP_ins/N3_9/y_temp_reg.
+DSP Report: register U0/MLP_ins/N3_9/y_temp_reg is absorbed into DSP U0/MLP_ins/N3_9/y_temp_reg.
+DSP Report: register U0/MLP_ins/N3_9/y_temp1_reg is absorbed into DSP U0/MLP_ins/N3_9/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N3_9/y_temp0 is absorbed into DSP U0/MLP_ins/N3_9/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N3_9/y_temp10 is absorbed into DSP U0/MLP_ins/N3_9/y_temp_reg.
+DSP Report: Generating DSP U0/MLP_ins/N3_10/y_temp_reg, operation Mode is: (P+(A*B2)')'.
+DSP Report: register U0/MLP_ins/BW3_10/doa_reg is absorbed into DSP U0/MLP_ins/N3_10/y_temp_reg.
+DSP Report: register U0/MLP_ins/N3_10/y_temp_reg is absorbed into DSP U0/MLP_ins/N3_10/y_temp_reg.
+DSP Report: register U0/MLP_ins/N3_10/y_temp1_reg is absorbed into DSP U0/MLP_ins/N3_10/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N3_10/y_temp0 is absorbed into DSP U0/MLP_ins/N3_10/y_temp_reg.
+DSP Report: operator U0/MLP_ins/N3_10/y_temp10 is absorbed into DSP U0/MLP_ins/N3_10/y_temp_reg.
+WARNING: [Synth 8-7129] Port s00_axi_awprot[2] in module MLP1_IP_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[1] in module MLP1_IP_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[0] in module MLP1_IP_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module MLP1_IP_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module MLP1_IP_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module MLP1_IP_0_1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:01:21 . Memory (MB): peak = 2261.836 ; gain = 640.312 ; free physical = 1540 ; free virtual = 17322
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1263.165; parent = 1149.701; children = 139.763
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3313.492; parent = 2261.840; children = 1051.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------------------------------------+---------------+----------------+
+|Module Name | RTL Object                               | Depth x Width | Implemented As | 
++------------+------------------------------------------+---------------+----------------+
+|BRAM_W2     | RAM[16]                                  | 32x13         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x13         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x14         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x13         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x14         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x14         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x12         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x14         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x13         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x14         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x14         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x13         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x14         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x12         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x14         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x14         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x14         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x14         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x14         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x14         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x14         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x13         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x13         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x14         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x14         | LUT            | 
+|BRAM_W2     | RAM[16]                                  | 32x14         | LUT            | 
+|MLP         | BW1_1/doa_reg                            | 1024x13       | Block RAM      | 
+|MLP         | BW1_2/doa_reg                            | 1024x13       | Block RAM      | 
+|MLP         | BW1_3/doa_reg                            | 1024x13       | Block RAM      | 
+|MLP         | BW1_4/doa_reg                            | 1024x13       | Block RAM      | 
+|MLP         | BW1_5/doa_reg                            | 1024x13       | Block RAM      | 
+|MLP         | BW1_6/doa_reg                            | 1024x13       | Block RAM      | 
+|MLP         | BW1_7/doa_reg                            | 1024x13       | Block RAM      | 
+|MLP         | BW1_8/doa_reg                            | 1024x13       | Block RAM      | 
+|MLP         | BW1_9/doa_reg                            | 1024x13       | Block RAM      | 
+|MLP         | BW1_10/doa_reg                           | 1024x13       | Block RAM      | 
+|MLP         | BW1_11/doa_reg                           | 1024x13       | Block RAM      | 
+|MLP         | BW1_12/doa_reg                           | 1024x13       | Block RAM      | 
+|MLP         | BW1_13/doa_reg                           | 1024x13       | Block RAM      | 
+|MLP         | BW1_14/doa_reg                           | 1024x13       | Block RAM      | 
+|MLP         | BW1_15/doa_reg                           | 1024x13       | Block RAM      | 
+|MLP         | BW1_16/doa_reg                           | 1024x13       | Block RAM      | 
+|MLP         | BS/doa_reg                               | 1024x16       | Block RAM      | 
+|MLP1_IP_0_1 | U0/MLP_ins/Counter_W1S/count_reg_reg_rep | 1024x13       | Block RAM      | 
+|MLP1_IP_0_1 | U0/MLP_ins/Counter_W1S/count_reg_reg_rep | 1024x10       | Block RAM      | 
+|MLP1_IP_0_1 | U0/MLP_ins/Counter_W1S/count_reg_reg_rep | 1024x13       | Block RAM      | 
+|MLP1_IP_0_1 | U0/MLP_ins/Counter_W1S/count_reg_reg_rep | 1024x13       | Block RAM      | 
+|MLP1_IP_0_1 | U0/MLP_ins/Counter_W1S/count_reg_reg_rep | 1024x13       | Block RAM      | 
+|MLP1_IP_0_1 | U0/MLP_ins/Counter_W1S/count_reg_reg_rep | 1024x13       | Block RAM      | 
+|MLP1_IP_0_1 | U0/MLP_ins/Counter_W1S/count_reg_reg_rep | 1024x13       | Block RAM      | 
+|MLP1_IP_0_1 | U0/MLP_ins/Counter_W1S/count_reg_reg_rep | 1024x13       | Block RAM      | 
+|MLP1_IP_0_1 | U0/MLP_ins/Counter_W1S/count_reg_reg_rep | 1024x13       | Block RAM      | 
+|MLP1_IP_0_1 | U0/MLP_ins/Counter_W1S/count_reg_reg_rep | 1024x13       | Block RAM      | 
+|MLP1_IP_0_1 | U0/MLP_ins/Counter_W1S/count_reg_reg_rep | 1024x13       | Block RAM      | 
+|MLP1_IP_0_1 | U0/MLP_ins/Counter_W1S/count_reg_reg_rep | 1024x13       | Block RAM      | 
+|MLP1_IP_0_1 | U0/MLP_ins/Counter_W1S/count_reg_reg_rep | 1024x13       | Block RAM      | 
+|MLP1_IP_0_1 | U0/MLP_ins/Counter_W1S/count_reg_reg_rep | 1024x13       | Block RAM      | 
+|MLP1_IP_0_1 | U0/MLP_ins/Counter_W1S/count_reg_reg_rep | 1024x13       | Block RAM      | 
+|MLP1_IP_0_1 | U0/MLP_ins/Counter_W1S/count_reg_reg_rep | 1024x13       | Block RAM      | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW2_1/RAM[16]                 | 32x13         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW2_2/RAM[16]                 | 32x13         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW2_3/RAM[16]                 | 32x14         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW2_4/RAM[16]                 | 32x13         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW2_5/RAM[16]                 | 32x14         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW2_6/RAM[16]                 | 32x14         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW2_7/RAM[16]                 | 32x12         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW2_8/RAM[16]                 | 32x14         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW2_9/RAM[16]                 | 32x13         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW2_12/RAM[16]                | 32x13         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW2_14/RAM[16]                | 32x12         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW2_15/RAM[16]                | 32x14         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW2_16/RAM[16]                | 32x14         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW3_1/RAM[16]                 | 32x14         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW3_2/RAM[16]                 | 32x14         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW3_3/RAM[16]                 | 32x14         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW3_4/RAM[16]                 | 32x14         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW3_5/RAM[16]                 | 32x14         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW3_6/RAM[16]                 | 32x13         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW3_7/RAM[16]                 | 32x13         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW3_8/RAM[16]                 | 32x14         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW3_9/RAM[16]                 | 32x14         | LUT            | 
+|MLP1_IP_0_1 | U0/MLP_ins/BW3_10/RAM[16]                | 32x14         | LUT            | 
++------------+------------------------------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+----------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives     | 
++------------+----------------------------+-----------+----------------------+----------------+
+|MLP1_IP_0_1 | U0/MLP_ins/BRAM_L1/RAM_reg | Implied   | 16 x 16              | RAM16X1S x 16  | 
+|MLP1_IP_0_1 | U0/MLP_ins/BRAM_L2/RAM_reg | Implied   | 16 x 16              | RAM16X1S x 16  | 
++------------+----------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Neuron_1    | A*B          | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Neuron_1    | A*B          | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Neuron_1    | A*B          | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Neuron_1    | A*B          | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Neuron_1    | A*B          | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Neuron_1    | A*B          | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Neuron_1    | A*B          | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Neuron_1    | A*B          | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Neuron_1    | A*B          | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Neuron_1    | A*B          | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Neuron_1    | A*B          | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Neuron_1    | A*B          | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Neuron_1    | A*B          | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Neuron_1    | A*B          | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Neuron_1    | A*B          | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Neuron_1    | A*B          | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 13     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A2*B)')' | 16     | 16     | -      | -      | 34     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 14     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 13     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 14     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 14     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 12     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 14     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 13     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 14     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 14     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 13     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 14     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 12     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 14     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 14     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 14     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 14     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 14     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 14     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 14     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 13     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 13     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 14     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 14     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A*B2)')' | 16     | 14     | -      | -      | 34     | 0    | 1    | -    | -    | -     | 1    | 1    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:32 . Memory (MB): peak = 2261.836 ; gain = 640.312 ; free physical = 2505 ; free virtual = 18386
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1309.884; parent = 1196.141; children = 139.763
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3313.492; parent = 2261.840; children = 1051.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:33 . Memory (MB): peak = 2261.836 ; gain = 640.312 ; free physical = 2492 ; free virtual = 18373
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1312.547; parent = 1198.806; children = 139.763
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3313.492; parent = 2261.840; children = 1051.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+----------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives     | 
++------------+----------------------------+-----------+----------------------+----------------+
+|MLP1_IP_0_1 | U0/MLP_ins/BRAM_L1/RAM_reg | Implied   | 16 x 16              | RAM16X1S x 16  | 
+|MLP1_IP_0_1 | U0/MLP_ins/BRAM_L2/RAM_reg | Implied   | 16 x 16              | RAM16X1S x 16  | 
++------------+----------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance U0/MLP_ins/Counter_W1S/count_reg_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/MLP_ins/Counter_W1S/count_reg_reg_rep__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/MLP_ins/Counter_W1S/count_reg_reg_rep__1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/MLP_ins/Counter_W1S/count_reg_reg_rep__2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/MLP_ins/Counter_W1S/count_reg_reg_rep__3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/MLP_ins/Counter_W1S/count_reg_reg_rep__4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/MLP_ins/Counter_W1S/count_reg_reg_rep__5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/MLP_ins/Counter_W1S/count_reg_reg_rep__6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/MLP_ins/Counter_W1S/count_reg_reg_rep__7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/MLP_ins/Counter_W1S/count_reg_reg_rep__8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/MLP_ins/Counter_W1S/count_reg_reg_rep__9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/MLP_ins/Counter_W1S/count_reg_reg_rep__10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/MLP_ins/Counter_W1S/count_reg_reg_rep__11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/MLP_ins/Counter_W1S/count_reg_reg_rep__12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/MLP_ins/Counter_W1S/count_reg_reg_rep__13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/MLP_ins/Counter_W1S/count_reg_reg_rep__14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/MLP_ins/Counter_W1S/count_reg_reg_rep__15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:03 ; elapsed = 00:01:35 . Memory (MB): peak = 2261.836 ; gain = 640.312 ; free physical = 3386 ; free virtual = 19271
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1355.149; parent = 1241.225; children = 139.763
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3313.492; parent = 2261.840; children = 1051.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:40 . Memory (MB): peak = 2261.836 ; gain = 640.312 ; free physical = 3378 ; free virtual = 19276
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1357.348; parent = 1243.354; children = 139.763
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3313.492; parent = 2261.840; children = 1051.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:41 . Memory (MB): peak = 2261.836 ; gain = 640.312 ; free physical = 3378 ; free virtual = 19276
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1357.379; parent = 1243.386; children = 139.763
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3313.492; parent = 2261.840; children = 1051.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:41 . Memory (MB): peak = 2261.836 ; gain = 640.312 ; free physical = 3377 ; free virtual = 19276
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1358.223; parent = 1244.229; children = 139.763
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3313.492; parent = 2261.840; children = 1051.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:10 ; elapsed = 00:01:41 . Memory (MB): peak = 2261.836 ; gain = 640.312 ; free physical = 3393 ; free virtual = 19291
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1358.227; parent = 1244.233; children = 139.763
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3313.492; parent = 2261.840; children = 1051.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:41 . Memory (MB): peak = 2261.836 ; gain = 640.312 ; free physical = 3393 ; free virtual = 19291
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1358.289; parent = 1244.296; children = 139.763
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3313.492; parent = 2261.840; children = 1051.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:41 . Memory (MB): peak = 2261.836 ; gain = 640.312 ; free physical = 3393 ; free virtual = 19291
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1358.289; parent = 1244.296; children = 139.763
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3313.492; parent = 2261.840; children = 1051.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Neuron_1    | (A'*B')'      | 10     | 18     | -      | -      | 29     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Neuron_1    | (A'*B')'      | 10     | 18     | -      | -      | 29     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Neuron_1    | (A'*B')'      | 10     | 18     | -      | -      | 29     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Neuron_1    | (A'*B')'      | 10     | 18     | -      | -      | 29     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Neuron_1    | (A'*B')'      | 10     | 18     | -      | -      | 29     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Neuron_1    | (A'*B')'      | 10     | 18     | -      | -      | 29     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Neuron_1    | (A'*B')'      | 10     | 18     | -      | -      | 29     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Neuron_1    | (A'*B')'      | 10     | 18     | -      | -      | 29     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Neuron_1    | (A'*B')'      | 10     | 18     | -      | -      | 29     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Neuron_1    | (A'*B')'      | 10     | 18     | -      | -      | 29     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Neuron_1    | (A'*B')'      | 10     | 18     | -      | -      | 29     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Neuron_1    | (A'*B')'      | 10     | 18     | -      | -      | 29     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Neuron_1    | (A'*B')'      | 10     | 18     | -      | -      | 29     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Neuron_1    | (A'*B')'      | 10     | 18     | -      | -      | 29     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Neuron_1    | (A'*B')'      | 10     | 18     | -      | -      | 29     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Neuron_1    | (A'*B')'      | 10     | 18     | -      | -      | 29     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 30     | 10     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|MLP1_IP_0_1 | (P+(A'*B')')' | 10     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 1    | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   891|
+|2     |DSP48E1  |    42|
+|4     |LUT1     |   911|
+|5     |LUT2     |  3039|
+|6     |LUT3     |    54|
+|7     |LUT4     |    21|
+|8     |LUT5     |   457|
+|9     |LUT6     |   574|
+|10    |MUXF7    |    29|
+|11    |MUXF8    |    12|
+|12    |RAM16X1S |    18|
+|13    |RAMB18E1 |    17|
+|30    |FDRE     |  2602|
+|31    |FDSE     |     5|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:41 . Memory (MB): peak = 2261.836 ; gain = 640.312 ; free physical = 3393 ; free virtual = 19291
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1358.543; parent = 1244.550; children = 139.763
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3313.492; parent = 2261.840; children = 1051.652
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:06 ; elapsed = 00:01:36 . Memory (MB): peak = 2261.836 ; gain = 514.578 ; free physical = 3456 ; free virtual = 19354
+Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:41 . Memory (MB): peak = 2261.844 ; gain = 640.312 ; free physical = 3456 ; free virtual = 19354
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2261.844 ; gain = 0.000 ; free physical = 3567 ; free virtual = 19465
+INFO: [Netlist 29-17] Analyzing 1009 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2261.844 ; gain = 0.000 ; free physical = 3507 ; free virtual = 19408
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 18 instances
+
+Synth Design complete, checksum: fe22ba49
+INFO: [Common 17-83] Releasing license: Synthesis
+160 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:24 ; elapsed = 00:01:57 . Memory (MB): peak = 2261.844 ; gain = 946.660 ; free physical = 3736 ; free virtual = 19637
+INFO: [Common 17-1381] The checkpoint '/home/mina/Downloads/IP_NOV0/IP_NOV0.runs/MLP1_IP_0_1_synth_1/MLP1_IP_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP MLP1_IP_0_1, cache-ID = bb24df752909f7a2
+INFO: [Coretcl 2-1174] Renamed 56 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/mina/Downloads/IP_NOV0/IP_NOV0.runs/MLP1_IP_0_1_synth_1/MLP1_IP_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MLP1_IP_0_1_utilization_synth.rpt -pb MLP1_IP_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 30 23:51:45 2023...
