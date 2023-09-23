@@ -1,0 +1,25 @@
+13:44:58 **** Incremental Build of configuration Debug for project application_8_9 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/student/Downloads/psds/PSDS_FINALNA/IP_psds_8_9/platforma_8_9/export/platforma_8_9/sw/platforma_8_9/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: application_8_9.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/student/Downloads/psds/PSDS_FINALNA/IP_psds_8_9/platforma_8_9/export/platforma_8_9/sw/platforma_8_9/standalone_domain/bsplib/lib -o "application_8_9.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: application_8_9.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size application_8_9.elf  |tee "application_8_9.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  49332	   2548	  22640	  74520	  12318	application_8_9.elf
+'Finished building: application_8_9.elf.size'
+' '
+
+13:44:58 Build Finished (took 752ms)
+

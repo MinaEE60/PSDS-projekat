@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep  8 11:55:59 2023
+# Process ID: 10356
+# Current directory: C:/Users/student/Downloads/psds/PSDS_FINALNA/IP_psds_8_9/IP_psds_8_9.runs/synth_1
+# Command line: vivado.exe -log psds_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source psds_wrapper.tcl
+# Log file: C:/Users/student/Downloads/psds/PSDS_FINALNA/IP_psds_8_9/IP_psds_8_9.runs/synth_1/psds_wrapper.vds
+# Journal file: C:/Users/student/Downloads/psds/PSDS_FINALNA/IP_psds_8_9/IP_psds_8_9.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source psds_wrapper.tcl -notrace
